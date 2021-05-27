@@ -11,16 +11,16 @@ const header = document.getElementById("header");
 const experienceEl = document.getElementById("experiences");
 const main = document.querySelector(".main");
 
-let headingText = headingEl.textContent;
-const headingTextLength = headingText.length;
-const newText = "Rayan Cherad.";
-
 // init
 if (screen.width < 1088) {
   document.body.innerHTML =
     "<h1>Cannot Open the website on mobile screen!</h1>";
   throw new Error("Cannot Open the website on mobile screen!");
 }
+
+let headingText = headingEl.textContent;
+const headingTextLength = headingText.length;
+const newText = "Rayan Cherad.";
 
 const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
